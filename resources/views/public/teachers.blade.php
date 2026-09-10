@@ -1,0 +1,4 @@
+@extends('layouts.public', ['title' => 'مدرسونا'])
+@section('content')
+<main><section><div class="container"><div class="section-head"><span class="eyebrow">خبرة تساندك</span><h1>مدرسون يشرحون لك بطريقتك</h1><p>مدرسون متخصصون وشرح قريب من الطالب ومتابعة حقيقية لتقدمك.</p></div><div class="grid">@forelse($teachers as $teacher)<a class="card" href="{{ route('teachers.show', $teacher->id) }}"><div class="icon">{{ mb_substr($teacher->full_name, 0, 1) }}</div><h3>{{ $teacher->full_name }}</h3><p>{{ $teacher->specialization ?: 'مدرس معتمد' }}</p><p>{{ $teacher->bio ?: 'مدرس متخصص لمتابعة الطلاب وتبسيط المادة التعليمية.' }}</p><span class="muted">{{ (int)($teacher->years_experience ?? 0) }} سنوات خبرة ←</span></a>@empty<p class="muted">سيتم عرض المدرسين المعتمدين هنا قريبًا.</p>@endforelse</div></div></section></main>
+@endsection

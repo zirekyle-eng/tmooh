@@ -1,0 +1,4 @@
+@extends('layouts.public', ['title' => 'السياسات والشروط'])
+@section('content')
+<main><section><div class="container" style="max-width:850px"><div class="section-head"><span class="eyebrow">السياسات</span><h1>السياسات والشروط</h1></div><div class="card"><h2>تفعيل الاشتراك ومراجعة الإيصال</h2><p class="muted">بعد إرسال الدفع، تراجع الإدارة الإيصال خلال يوم عمل واحد. لا يُمنح الوصول للحصص أو المحتوى قبل اعتماد الدفع.</p><h2>الاسترداد</h2><p class="muted">تتم معالجة طلبات الاسترداد وفق سياسة الأكاديمية وبعد مراجعة الحالة من الإدارة.</p><h2>الخصوصية</h2><p class="muted">تُستخدم بيانات الحساب والدفع لتقديم التعليم وإدارة التسجيل والتواصل المتعلق به.</p></div></div></section></main>
+@endsection
